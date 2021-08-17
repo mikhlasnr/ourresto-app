@@ -1,0 +1,65 @@
+@media screen and (max-width: 499px) {
+  /*
+  * NAVBAR
+  *
+  */
+
+  .nav-mobile {
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-100%, 0);
+
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: center;
+    padding: 18px 0;
+  }
+  .open {
+    transform: translate(0, 0);
+  }
+  #nav-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 455px) {
+}
+
+@media screen and (min-width: 500px) {
+  .header__menu,
+  .nav-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+}
+
+@media screen and (min-width: 700px) {
+}
+
+@media screen and (min-width: 800px) {
+}
+
+@media screen and (min-width: 900px) {
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 1200px) {
+  /*
+ * Jumbotron
+ */
+}
