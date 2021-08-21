@@ -14,24 +14,29 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <h1 class="header__title">OUR RESTO</h1>
-          <nav id="nav-desktop" class="nav">
-            <div class="nav__list">
-              <div class="nav__item"><a href="/">Home</a></div>
-              <div class="nav__item"><a href="#"> Favorite</a></div>
-              <div class="nav__item">
-                <a href="https://ranau.my.id/">About Us</a>
-              </div>
-            </div>
-          </nav>
-          <a id="menu" class="header__menu">☰</a>
-        </div>
+    <a href="#maincontent" class="skip-link">Menuju ke konten</a>
+    <header class="header container">
+      <div class="header__inner">
+        <h1 class="header__title">OUR RESTO</h1>
+        <nav id="nav-desktop" class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="/">Home</a></li>
+            <li class="nav__item"><a href="#"> Favorite</a></li>
+            <li class="nav__item">
+              <a href="https://ranau.my.id/">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <a
+          id="menu"
+          class="header__menu"
+          tabindex="0"
+          aria-label="toggle open menu"
+          >☰</a
+        >
       </div>
     </header>
-    <nav id="drawer" class="nav-mobile">
+    <nav id="drawer" class="nav-mobile" tabindex="0" aria-label="navigasi">
       <div class="nav__list">
         <div class="nav__item"><a href="/">Home</a></div>
         <div class="nav__item"><a href="#"> Favorite</a></div>
@@ -41,5 +46,16 @@
       </div>
     </nav>
     <div class="hero"></div>
+    <main id="maincontent">
+      <section class="content container">
+        <div class="explore_restaurant">
+          <h1 class="explore__label" tabindex="0">Explore Restaurant</h1>
+          <div id="posts" class="posts">
+            <!-- post item akan diisi menggunakan dom manipulation javascript pada index.js -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Copyright © 2021 - OUR RESTO</footer>
   </body>
 </html>

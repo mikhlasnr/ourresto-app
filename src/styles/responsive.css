@@ -3,7 +3,6 @@
   * NAVBAR
   *
   */
-
   .nav-mobile {
     z-index: 10;
     background-color: #fff;
@@ -25,15 +24,16 @@
     text-align: center;
     padding: 18px 0;
   }
+  .nav__item a {
+    width: 100%;
+    padding: 18px;
+  }
   .open {
     transform: translate(0, 0);
   }
   #nav-desktop {
     display: none;
   }
-}
-
-@media screen and (min-width: 455px) {
 }
 
 @media screen and (min-width: 500px) {
@@ -43,19 +43,28 @@
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 700px) and (max-width: 899px) {
+  .post-item__thumbnail-container {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .hero {
+    height: 50vh;
+  }
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px 16px;
+  }
 }
 
-@media screen and (min-width: 700px) {
-}
-
-@media screen and (min-width: 800px) {
-}
-
-@media screen and (min-width: 900px) {
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
